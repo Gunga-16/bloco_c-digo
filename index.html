@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Código</title>
+    <style>
+        /* Estilos para o bloco de código */
+        pre {
+            background-color: #2d2d2d; /* Fundo escuro */
+            color: #f8f8f2; /* Texto claro */
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto; /* Scroll horizontal para longas linhas */
+            font-family: 'Courier New', monospace;
+        }
+
+        code {
+            color: #f8f8f2;
+        }
+
+        /* Estilos para cores de sintaxe (simulando o Java na imagem) */
+        .comment { color: #75715e; }
+        .keyword { color: #66d9ef; }
+        .string { color: #e6db74; }
+        .number { color: #ae81ff; }
+        .method { color: #a6e22e; }
+    </style>
+</head>
+<body>
+
+<pre><code>
+<span class="comment">/*</span>
+<span class="comment"> Demonstra um bloco de código.</span>
+<span class="comment"> Chame este arquivo de BlocoDemo.java.</span>
+<span class="comment">*/</span>
+
+<span class="keyword">class</span> BlockDemo {
+    <span class="keyword">public static void</span> main(String[] args) {
+        <span class="keyword">double</span> i, j, d;
+        i = <span class="number">5</span>;
+        j = <span class="number">10</span>;
+        
+        <span class="comment">// o alvo desta instrução if é um bloco de código</span>
+        <span class="keyword">if</span>(i != <span class="number">0</span>) {
+            System.<span class="method">out.println</span>("i does not equal zero");
+            d = j / i;
+            System.<span class="method">out.println</span>("j / i is " + d);
+        }
+    }
+}
+</code></pre>
+
+</body>
+</html>
